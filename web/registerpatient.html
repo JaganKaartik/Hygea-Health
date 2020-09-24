@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!-- Register Patient (Static Form Page) -->
+
+
+<html>
+    <head>
+        <title>Patient Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- BootStrap Framework -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+        <!-- Materialize Front End Framework -->
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">          
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/base.css" type="text/css">
+
+        <!-- External JavaScript File -->
+        
+        <!-- <script src="js/register.js"></script> -->
+        
+     
+    </head>
+    <body>
+
+      <!-- Nagivation Bar -->
+      
+      <nav>
+          <div class="nav-wrapper cyan darken-2">
+              <!-- HREF TO ABOUT.HTML -->
+              <h6 class="brand-logo center">Patient Registration</h6>
+              <a href="Reception.jsp" class="brand-logo right">HygeaHealth+</a>
+            </div>
+      </nav>
+      
+      <div class = "container">
+        <div class="card-panel cyan darken-3">
+            <div class="row">
+              <form class="col s6" method="post" action="regpat">
+
+                <div class = "row">
+                  <div class="input-field col s6">
+                      <input name="pid" type="text" class="validate">
+                      <label for="pid">Patient ID</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s3">
+                      <input name="first_Name" type="text" class="validate">
+                      <label for="first_Name">First Name</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                      <input name="last_Name" type="text" class="validate">
+                      <label for="last_Name">Last Name</label>
+                    </div>
+                  </div>
+
+                  <div class = "row">
+
+                      <!-- TRY DATEPICKER -->
+
+                      <div class="input-field col s2">
+                          <input name="dob" type="text" class="validate">
+                          <label for="dob">Date of Birth</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="age" type="text" class="validate">
+                          <label for="age">Age</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="sex" type="text" class="validate">
+                          <label for="sex">Sex</label>
+                      </div>
+
+                  </div>
+
+
+                  <!-- <div class="row">
+                    <div class="input-field col s6">
+                      <input disabled value="I am not editable" name="disabled" type="text" class="validate">
+                      <label for="disabled">Disabled</label>
+                    </div>
+                  </div> -->
+
+                  <div class="row">
+
+                    <div class="input-field col s6">
+                      <input name="address" type="text" class="validate">
+                      <label for="address">Address</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input name="pincode" type="text" class="validate">
+                      <label for="pincode">Pincode</label>
+                    </div>
+                  
+                  </div>
+
+                  <div class = "row">
+
+                      <div class="input-field col s2">
+                          <input name="bloodgroup" type="text" class="validate">
+                          <label for="bloodgroup">Blood Group</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="pno" type="text" class="validate">
+                          <label for="pno">Phone Number</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="marital_status" type="text" class="validate">
+                          <label for="marital_status">Marital Status</label>
+                      </div>
+
+                  </div>
+                  
+
+                  <!-- Sample -->
+                  <!-- <div class="row">
+                    <div class="col s6">
+                      This is an inline input field:
+                      <div class="input-field inline">
+                        <input name="email_inline" type="email" class="validate">
+                        <label for="email_inline">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- End of Sample -->
+
+
+                  <button class="btn btn-primary" >Register</button>
+              </form>
+          </div>
+        </div>
+        <div class="row">
+              <a href="Reception.jsp"><button class="btn btn-primary" >Back to Homepage</button></a>
+        </div>
+      </div>
+
+      <!-- <script>
+         $(document).ready(function(){$('.datepicker').datepicker();});
+      </script> -->
+
+    </body>
+</html>

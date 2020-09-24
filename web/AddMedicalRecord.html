@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Medical Records</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BootStrap Framework -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+        <!-- Materialize Front End Framework -->
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">          
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/base.css" type="text/css">
+
+        <!-- External JavaScript File -->
+        
+        <!-- <script src="js/register.js"></script> -->
+
+    </head>
+
+    <body>
+
+    	<nav>
+          <div class="nav-wrapper cyan darken-3">
+              
+                <!-- Add Medical Records -->
+              
+              <h6 class="brand-logo center">Medical Records</h6>
+              <a href="Reception.jsp" class="brand-logo right">HygeaHealth+</a>
+            </div>
+      	</nav>
+
+        <div class = "container">
+        <div class="card-panel cyan darken-3">
+            <div class="row">
+              <form class="col s6" method="post" action="addmedrec">
+
+                <div class = "row">
+
+                      <!-- Patient ID -->
+                      
+                      <h3 class="white-text">Records</h3>
+                      <div class="input-field col s2">
+                          <input name="pid" type="text" class="validate">
+                          <label for="pid">Patient ID</label>
+                      </div>
+
+                </div>
+
+
+              <div class="row">
+                <div class="input-field col s3">
+                  <input name="Allergies" type="text" class="validate">
+                  <label for="Allergies">Allergies</label>
+                </div>
+
+                <div class="input-field col s3">
+                  <input name="Medications" type="text" class="validate">
+                  <label for="Medications">Medications</label>
+                </div>
+               </div>
+
+
+                <div class = "row">
+                  <div class="input-field col s3">
+                    <input name="Problems" type="text" class="validate">
+                    <label for="Problems">Other Health Problems</label>
+                    </div>
+                  <div class="input-field col s3">
+                    <input name="Vaccinations" type="text" class="validate">
+                    <label for="Vaccinations">Vaccinations</label>
+                    </div>
+                </div>
+
+
+                  <!-- <div class="row">
+                    <div class="input-field col s6">
+                      <input disabled value="I am not editable" name="disabled" type="text" class="validate">
+                      <label for="disabled">Disabled</label>
+                    </div>
+                  </div> -->
+
+                  <div class="row">
+                    <h3 class="white-text">Vitals</h3>
+                    <br>
+                    <br>
+                    <div class="input-field col s2">
+                      <input name="Height" type="text" class="validate">
+                      <label for="Height">Height</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                      <input name="Weight" type="text" class="validate">
+                      <label for="Weight">Weight</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                      <input name="BodyTemp" type="text" class="validate">
+                      <label for="BodyTemp">BodyTemp</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s2">
+                      <input name="PulseRate" type="text" class="validate">
+                      <label for="PulseRate">PulseRate</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                      <input name="BPDiastolic" type="text" class="validate">
+                      <label for="BPDiastolic">BPDiastolic</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                      <input name="BPSystolic" type="text" class="validate">
+                      <label for="BPSystolic">BPSystolic</label>
+                    </div>
+                  </div>
+
+                  <div class = "row">
+                      <h3 class="white-text">Other Details</h3>
+                      <br>
+                      <br>
+                      <div class="input-field col s2">
+                          <input name="PrevConsultation" type="text" class="validate">
+                          <label for="PrevConsultation">PrevConsultation</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="Habits" type="text" class="validate">
+                          <label for="Habits">Habits</label>
+                      </div>
+
+                      <div class="input-field col s2">
+                          <input name="SurgeryHistory" type="text" class="validate">
+                          <label for="SurgeryHistory">SurgeryHistory</label>
+                      </div>
+                  </div>
+
+
+                  <!-- Sample -->
+                          <!-- <div class="row">
+                            <div class="col s6">
+                              This is an inline input field:
+                              <div class="input-field inline">
+                                <input name="email_inline" type="email" class="validate">
+                                <label for="email_inline">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                              </div>
+                            </div>
+                          </div> -->
+                  <!-- End of Sample -->
+
+
+                  <button class="btn btn-primary" >Register</button>
+              </form>
+          </div>
+        </div>
+        <div class="row">
+              <a href="Reception.jsp"><button class="btn btn-primary" >Back to Homepage</button></a>
+        </div>
+      </div>
+       
+    </body>
+</html>

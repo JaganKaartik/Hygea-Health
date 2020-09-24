@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+     <!-- Listener  -->
+     
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>HealthRecord.DBListener</listener-class>
+    </listener>
+
+    <!-- Servlets -->
+    
+    <servlet>
+        <servlet-name>RegPatient</servlet-name>
+        <servlet-class>HealthRecord.patientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegPatient</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- Verify Login Servlet -->
+
+    <servlet>
+        <servlet-name>VerifyLogin</servlet-name>
+        <servlet-class>HealthRecord.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyLogin</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Log Out Servlet -->
+    
+    <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <servlet-class>HealthRecord.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Sign Up (Register User) Servlet -->
+    
+    <servlet>
+        <servlet-name>RegUser</servlet-name>
+        <servlet-class>HealthRecord.SignupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegUser</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+   
+    <!-- Register Patient Servlet -->
+   
+    <servlet>
+        <servlet-name>RegisterPatient</servlet-name>
+        <servlet-class>HealthRecord.RegisterPatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterPatient</servlet-name>
+        <url-pattern>/regpat</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Patient Info Controller -->
+    
+    <servlet>
+        <display-name>Patient Information Control</display-name>
+        <servlet-name>PatInfoController</servlet-name>
+        <servlet-class>HealthRecord.PatientInfoController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatInfoController</servlet-name>
+        <url-pattern>/patinfocontrol</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Patient DAO Servlet -->
+    
+    <servlet>
+        <servlet-name>PatientDAO</servlet-name>
+        <servlet-class>HealthRecord.patientDAO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientDAO</servlet-name>
+        <url-pattern>/patientDAO</url-pattern>
+    </servlet-mapping>
+    
+    <!-- View All Users Servlet -->
+    
+    <servlet>
+        <servlet-name>ViewAllUser</servlet-name>
+        <servlet-class>HealthRecord.ViewAllUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllUser</servlet-name>
+        <url-pattern>/viewAllUser</url-pattern>
+    </servlet-mapping>
+    
+    <!-- View All Patients Servlet -->
+    
+    <servlet>
+        <servlet-name>ViewAllPat</servlet-name>
+        <servlet-class>HealthRecord.ViewAllPat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllPat</servlet-name>
+        <url-pattern>/viewAllPat</url-pattern>
+    </servlet-mapping>
+    
+    <!-- View All Doctors Servlet -->
+    
+    <servlet>
+        <servlet-name>ViewAllDoc</servlet-name>
+        <servlet-class>HealthRecord.ViewAllDoc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllDoc</servlet-name>
+        <url-pattern>/viewalldoc</url-pattern>
+    </servlet-mapping>
+    
+    <!-- View A Doctor Servlet -->
+    
+    <servlet>
+        <servlet-name>ViewDoctor</servlet-name>
+        <servlet-class>HealthRecord.ViewDoctor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewDoctor</servlet-name>
+        <url-pattern>/viewdoc</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Medical Record Servlet -->
+    
+    <servlet>
+        <servlet-name>MedicalRecord</servlet-name>
+        <servlet-class>HealthRecord.MedicalRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MedicalRecord</servlet-name>
+        <url-pattern>/addmedrec</url-pattern>
+    </servlet-mapping>
+    
+    <!-- View Medical Records Servlet -->
+    
+    <servlet>
+        <servlet-name>ViewMedicalRecord</servlet-name>
+        <servlet-class>HealthRecord.ViewMedicalRecords</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewMedicalRecord</servlet-name>
+        <url-pattern>/viewmedrec</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Delete Patients Servlet -->
+    
+    <servlet>
+        <servlet-name>DeletePat</servlet-name>
+        <servlet-class>HealthRecord.DeletePat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePat</servlet-name>
+        <url-pattern>/delpat</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Add Doctor Details Servlet -->
+
+    <servlet>
+        <servlet-name>DoctorRecord</servlet-name>
+        <servlet-class>HealthRecord.DoctorRecord</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorRecord</servlet-name>
+        <url-pattern>/adddoc</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Patient Medical Records Servlet -->
+    
+    <servlet>
+        <servlet-name>DeleteMedicalRecord</servlet-name>
+        <servlet-class>HealthRecord.DeleteMedicalRecord</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteMedicalRecord</servlet-name>
+        <url-pattern>/delmedrec</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

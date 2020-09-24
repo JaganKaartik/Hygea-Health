@@ -1,0 +1,7 @@
+/dist/
+.jar
+lib/
+*.htm
+pgAdmin4_files
+Admin_Page_files
+.DS_Store

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!-- This is the home page which contains the login/signup menu -->
+<!-- INDEX.HTML (Static Web Page) -->
+
+<html>
+    <head>
+        <title>HygeaHealth Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- BootStrap Framework -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+        <!-- Materialize Front End Framework -->
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">          
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+        <!-- JQuery -->
+        <script src=' https://code.jquery.com/jquery-3.4.1.min.js'></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Hepta Slab' rel='stylesheet'>
+
+        <style>
+        .jag {
+            font-family: 'Open Sans';font-size: 22px;
+        }
+        .jag2 {
+            font-family: 'Hepta Slab';font-size: 22px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+
+      <!-- Login Menu -->
+       <div class="container center-align">
+           <span class="jag light-blue-text text-lighten-2"><h1> HygeaHealth </h1></span>
+      </div>
+      <div class="container">
+          <div class="login-page">
+
+        <div class="form">
+
+          <!-- Registration Form (Send to Registration Servelt) -->
+
+          <!-- Login Form -->
+
+          <form class="login-form" method="post" action="login">
+            <input type="text" name="user" placeholder="Username"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <button>login</button>
+          </form>
+        </div>
+
+      </div>
+      <blockquote class="jag2 white-text">
+      Hygea Health is an Electronic Health Record (EHR) which is an electronic version of a patients medical history. It includes all of the key administrative clinical data relevant to that persons care including demographics, problems, medications, vital signs, past medical history, immunizations and other data.
+    </blockquote>
+
+    </div>
+
+   <!--  <div class="container">
+      <blockquote>
+        This is an example quotation that uses the blockquote tag.
+      </blockquote>
+    </div> -->
+
+    <!-- <div id="footer">
+
+
+    <p>&nbsp;</p>
+    <h6>Copyright 2019 HygeaHealth+ is a registered trademark of HygeaHealth Corporation</h6>
+  </div>
+ -->
+    <script>
+      $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});   
+    </script>
+    
+    </body>
+</html>

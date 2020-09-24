@@ -1,0 +1,12 @@
+body{
+	/*background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(bluegradient1.png);*/
+	background-image: url(admin2.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center; 
+}
+
+.active-cyan-3 input[type=text] {
+border: 1px solid #4dd0e1;
+box-shadow: 0 0 0 1px #4dd0e1;
+}
