@@ -36,7 +36,7 @@ In order to use any other database instances, add the nessesary jar **(postgres-
 `project-root/web/WEB-INF/lib/`
 folder and change the JDBC fields accordingly.
 
-## Hygea Health User Interface
+## Screens
 
 ### Homepage
 
